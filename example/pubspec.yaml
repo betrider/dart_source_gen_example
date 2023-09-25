@@ -5,10 +5,6 @@ environment:
   sdk: ^3.0.0
 
 dependencies:
-  analyzer: '>=5.2.0 <7.0.0'
   build: ^2.0.0
   go_router: ^11.0.0
   source_gen: ^1.4.0
-
-dev_dependencies:
-  dart_flutter_team_lints: ^1.0.0

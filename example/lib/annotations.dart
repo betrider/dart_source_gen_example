@@ -1,9 +1,12 @@
+/// 링크용 어노테이션
 class PageLink {
-  final String link;
-  final List<String> test;
+  /// 타이틀
+  final String title;
+  /// 경로
+  final List<String> paths;
 
   const PageLink(
-    this.link,
-    this.test,
+    this.title,
+    this.paths,
   );
 }

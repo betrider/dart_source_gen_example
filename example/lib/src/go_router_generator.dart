@@ -23,9 +23,9 @@ class GoRouterGenerator extends GeneratorForAnnotation<PageLink> {
     // 파일에 있는 모든 num 변수의 이름을 가지고 오는 부분
     final sumNames = topLevelNumVariables(library).map((element) => element.name).join(' + ');
     // 어노테이션 데이터 link를 수신 - 문자
-    final linkValue = annotation.read('link').stringValue;
+    final linkValue = annotation.read('title').stringValue;
     // 어노테이션 데이터 test를 수신 - 리스트
-    final testValue = annotation.read('test').listValue;
+    final testValue = annotation.read('paths').listValue;
 
     // .g 파일에 들어갈 데이터 작성
     StringBuffer buffer = StringBuffer();
